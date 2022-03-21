@@ -2,7 +2,10 @@ eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
+    region: default
+    availability-zones:
+      default: default-zone
     service-url:
-      default-zone: http://192.168.1.84:8761/
+      default-zone: http://192.168.1.84:8761/eureka/
   instance:
-    hostname: localhost
+    hostname: 192.168.1.84
